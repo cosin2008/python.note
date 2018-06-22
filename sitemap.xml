@@ -2,22 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>/mkdocs/mkdocs-materials主题/</loc>
-     <lastmod>2018-06-21</lastmod>
+     <lastmod>2018-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/mkdocs/mkdocs入门/</loc>
-     <lastmod>2018-06-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>/mkdocs/静态建站简介/</loc>
-     <lastmod>2018-06-21</lastmod>
+     <lastmod>2018-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
