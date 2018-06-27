@@ -1,61 +1,75 @@
 # 配置信息
 site_name: Python全栈学习笔记
 site_description: 详细记录学习Python全栈开发的心得
-site_author: 晴月浩雪
-site_url: null
+site_url: https://cosin2008.github.io/python.note/
+site_author: null
+copyright: null # 版权信息，会展示在页面底部
 
 # 源码仓库信息
-repo_url: null
+repo_url: https://github.com/cosin2008/python.note
 repo_name: GitHub
 
-# 
-#pages:
-#- 主页: index.md
-#- 静态建站: mkdocs/index.md
-
-#- 关于: 'about.md'
+pages:
+  - 前言: index.md
+  - Python开发环境:
+    - mkdocs构建在线文档:
+      - 入门: mkdocs/mkdocs-basic.md
+      - 中文支持: mkdocs/mkdocs-cn.md
+      - 主题:
+        - readthedocs: mkdocs/themes/mkdocs-readthedocs.md
+        - materials: mkdocs/themes/mkdocs-material.md
+      #- mkdocs页面组织:
+      - markdown文档编写:
+        - 编辑器:  mkdocs/syntax/mkdocs-md-editor.md
+        - 语法插件: mkdocs/syntax/mkdocs-md-exts.md
+        - 基本语法:  mkdocs/syntax/mkdocs-md.md
+        - 科技写作: mkdocs/syntax/mkdocs-md-sci.md
+        - 嵌入代码: mkdocs/syntax/mkdocs-md-code.md
+    #- 1. 支持代码高亮的语言: appendix/pygments.md
+    #- 2. emojione全名短名映射表: appendix/emoji_shortname.md
+    #- 3. 添加百度统计: appendix/baidu_tongji.md
+    #- 4. 配色: appendix/color.md
+    #- 5. 模块介绍: appendix/module.md
+    #- 6. mkdocs层级关系: appendix/level.md
+    #- 8. mkdocs.yml范例: appendix/yml.md
 
 # 主题配置
 theme:
-  # 平板化
-  name: material
+  language: zh # 让搜索界面里的各种提示文字变成中文
+  name: material # Google提倡的material平板风格
+  favicon: images/favicon.ico # 网站图标
+  logo: 'images/logo.svg' # 网站标识图片，显示在界面顶部左侧
   palette:
-    primary: 'Blue Grey'
-    accent: 'Pink'
+    primary: Grey # 官方19中主题配色方案，默认Indigo
+    accent: Orange # 官方16种鼠标悬停超链接文字颜色，默认Indigo
   feature:
-    tabs: false
-  language: 'zh'
+    tabs: true
+
 extra:
   search:
-    # 将搜索语言设为日文，可同时获得对中文搜索的基本功能
-    language: 'jp' 
-  social:
-    - type: github
-    - link: https://github.com/cyent
+    language: jp # 将搜索语言设为日文，可同时获得中文搜索的基本支持
 
 markdown_extensions:
-  - admonition
-  - codehilite(guess_lang=false,linenums=false)
-  - toc(permalink=true)
-  - footnotes
-  - meta
-  - def_list
-  - pymdownx.arithmatex
-  - pymdownx.betterem(smart_enable=all)
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_png
-      #emoji_generator: !!python/name:pymdownx.emoji.to_svg
-      #emoji_generator: !!python/name:pymdownx.emoji.to_png_sprite
-      #emoji_generator: !!python/name:pymdownx.emoji.to_svg_sprite
-      #emoji_generator: !!python/name:pymdownx.emoji.to_awesome
-      #emoji_generator: !!python/name:pymdownx.emoji.to_alt
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tasklist
-  - pymdownx.tilde
+  - codehilite(guess_lang=false,linenums=true) # 显示优化：代码高亮
+  - toc(permalink=true) # 显示优化：为TOC生成URL链接
+  - admonition # 支持用!!!标记的文本框
+  - footnotes # 支持用[^1]标记的类似论文引用的数字角标，并提供了页面内跳转
+  - meta # 支持页面级别的不被会显示的元数据，可以覆写页面的标题等
+  - pymdownx.arithmatex # 支持LaTeX数学公式的渲染
+  - pymdownx.betterem(smart_enable=all) # 优化对加粗斜体等效果的体验
+  - pymdownx.caret # 支持下划线
+  - pymdownx.critic # 支持插入、删除、替换等文档修订类符号
+  - pymdownx.details # 支持一个可折叠或展开的文本框用于描述细节内容
+  - pymdownx.emoji(emoji_generator=!!python/name:pymdownx.emoji.to_png) # 支持表情符号转义
+  - pymdownx.inlinehilite # 支持嵌入在大段文本里的代码高亮显示
+  - pymdownx.magiclink # 自动为Markdown里的地址增加可供链接的锚文本
+  - pymdownx.mark # 支持高亮背景
+  - pymdownx.smartsymbols # 支持类似©、™、®、¼之类的特殊符号
+  - pymdownx.superfences # 支持用TAB分页切换代码块等
+  - pymdownx.tasklist # 支持TODO列表类的任务状态显示
+  - pymdownx.tilde # 支持数字下标（化学分子式）和删节线
+  - def_list # 兼容PHP的Markdown引擎支持的列表语法
+
+extra_javascript:
+  # MathJax For Latex配置，支持用LaTex、Math ML或ASCII Math语法来书写数学公式
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML'
