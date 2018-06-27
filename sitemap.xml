@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>/</loc>
-     <lastmod>2018-06-22</lastmod>
+     <loc>https://cosin2008.github.io/python.note/</loc>
+     <lastmod>2018-06-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/mkdocs/mkdocs入门/</loc>
-     <lastmod>2018-06-22</lastmod>
+     <loc>https://cosin2008.github.io/python.note/mkdocs/mkdocs-basic/</loc>
+     <lastmod>2018-06-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/mkdocs/mkdocs-cn/</loc>
+     <lastmod>2018-06-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/mkdocs/themes/mkdocs-readthedocs/</loc>
+     <lastmod>2018-06-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/mkdocs/themes/mkdocs-material/</loc>
+     <lastmod>2018-06-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/mkdocs/syntax/mkdocs-md-editor/</loc>
+     <lastmod>2018-06-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/mkdocs/syntax/mkdocs-md-exts/</loc>
+     <lastmod>2018-06-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/mkdocs/syntax/mkdocs-md/</loc>
+     <lastmod>2018-06-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/mkdocs/syntax/mkdocs-md-sci/</loc>
+     <lastmod>2018-06-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/mkdocs/syntax/mkdocs-md-code/</loc>
+     <lastmod>2018-06-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
