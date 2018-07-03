@@ -13,7 +13,7 @@
         <meta name="description" content="详细记录学习Python开发的心得">
       
       
-        <link rel="canonical" href="https://cosin2008.github.io/python.note/mkdocs/mkdocs-cn/">
+        <link rel="canonical" href="https://cosin2008.github.io/python.note/devenv/pipenv/">
       
       
       
@@ -40,7 +40,7 @@
     
     
       
-        <title>中文支持 - Python学习笔记</title>
+        <title>pipenv - Python学习笔记</title>
       
     
     
@@ -102,7 +102,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#mkdocs" tabindex="1" class="md-skip">
+      <a href="#pipenv" tabindex="1" class="md-skip">
         跳转至
       </a>
     
@@ -128,7 +128,7 @@
                 Python学习笔记
               </span>
               <span class="md-header-nav__topic">
-                中文支持
+                pipenv
               </span>
             
           
@@ -225,7 +225,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../devenv/cpython/" title="工具栈" class="md-tabs__link">
+        <a href="../cpython/" title="工具栈" class="md-tabs__link md-tabs__link--active">
           工具栈
         </a>
       
@@ -330,10 +330,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
     
     <label class="md-nav__link" for="nav-2-1">
       开发环境
@@ -351,7 +353,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../devenv/cpython/" title="CPython" class="md-nav__link">
+    <a href="../cpython/" title="CPython" class="md-nav__link">
       CPython
     </a>
   </li>
@@ -363,7 +365,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../devenv/vscode/" title="VSCode" class="md-nav__link">
+    <a href="../vscode/" title="VSCode" class="md-nav__link">
       VSCode
     </a>
   </li>
@@ -375,7 +377,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../devenv/git/" title="Git" class="md-nav__link">
+    <a href="../git/" title="Git" class="md-nav__link">
       Git
     </a>
   </li>
@@ -385,11 +387,91 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../devenv/pipenv/" title="pipenv" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        pipenv
+      </label>
+    
+    <a href="./" title="pipenv" class="md-nav__link md-nav__link--active">
       pipenv
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pipenv_1" title="安装Pipenv" class="md-nav__link">
+    安装Pipenv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="创建虚拟环境" class="md-nav__link">
+    创建虚拟环境
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="激活虚拟环境" class="md-nav__link">
+    激活虚拟环境
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="安装依赖包" class="md-nav__link">
+    安装依赖包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="更新依赖包" class="md-nav__link">
+    更新依赖包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="查看依赖包" class="md-nav__link">
+    查看依赖包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="卸载依赖包" class="md-nav__link">
+    卸载依赖包
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -399,7 +481,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../devenv/setuptools/" title="setuptools" class="md-nav__link">
+    <a href="../setuptools/" title="setuptools" class="md-nav__link">
       setuptools
     </a>
   </li>
@@ -498,12 +580,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
     
     <label class="md-nav__link" for="nav-2-4">
       在线文档
@@ -521,7 +601,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mkdocs-basic/" title="入门" class="md-nav__link">
+    <a href="../../mkdocs/mkdocs-basic/" title="入门" class="md-nav__link">
       入门
     </a>
   </li>
@@ -533,7 +613,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mkdocs-github/" title="发布到Github" class="md-nav__link">
+    <a href="../../mkdocs/mkdocs-github/" title="发布到Github" class="md-nav__link">
       发布到Github
     </a>
   </li>
@@ -564,7 +644,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../themes/mkdocs-readthedocs/" title="readthedocs" class="md-nav__link">
+    <a href="../../mkdocs/themes/mkdocs-readthedocs/" title="readthedocs" class="md-nav__link">
       readthedocs
     </a>
   </li>
@@ -576,7 +656,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../themes/mkdocs-material/" title="materials" class="md-nav__link">
+    <a href="../../mkdocs/themes/mkdocs-material/" title="materials" class="md-nav__link">
       materials
     </a>
   </li>
@@ -591,56 +671,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        中文支持
-      </label>
-    
-    <a href="./" title="中文支持" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../mkdocs/mkdocs-cn/" title="中文支持" class="md-nav__link">
       中文支持
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目录</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" title="设置搜索语言" class="md-nav__link">
-    设置搜索语言
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="设置界面语言" class="md-nav__link">
-    设置界面语言
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -650,7 +685,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mkdocs-pages/" title="页面组织" class="md-nav__link">
+    <a href="../../mkdocs/mkdocs-pages/" title="页面组织" class="md-nav__link">
       页面组织
     </a>
   </li>
@@ -681,7 +716,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../syntax/mkdocs-md-editor/" title="编辑器" class="md-nav__link">
+    <a href="../../mkdocs/syntax/mkdocs-md-editor/" title="编辑器" class="md-nav__link">
       编辑器
     </a>
   </li>
@@ -693,7 +728,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../syntax/mkdocs-md-exts/" title="语法插件" class="md-nav__link">
+    <a href="../../mkdocs/syntax/mkdocs-md-exts/" title="语法插件" class="md-nav__link">
       语法插件
     </a>
   </li>
@@ -705,7 +740,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../syntax/mkdocs-md/" title="基本语法" class="md-nav__link">
+    <a href="../../mkdocs/syntax/mkdocs-md/" title="基本语法" class="md-nav__link">
       基本语法
     </a>
   </li>
@@ -717,7 +752,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../syntax/mkdocs-md-sci/" title="科技写作" class="md-nav__link">
+    <a href="../../mkdocs/syntax/mkdocs-md-sci/" title="科技写作" class="md-nav__link">
       科技写作
     </a>
   </li>
@@ -729,7 +764,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../syntax/mkdocs-md-code/" title="嵌入代码" class="md-nav__link">
+    <a href="../../mkdocs/syntax/mkdocs-md-code/" title="嵌入代码" class="md-nav__link">
       嵌入代码
     </a>
   </li>
@@ -831,15 +866,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="设置搜索语言" class="md-nav__link">
-    设置搜索语言
+  <a href="#pipenv_1" title="安装Pipenv" class="md-nav__link">
+    安装Pipenv
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="设置界面语言" class="md-nav__link">
-    设置界面语言
+  <a href="#_1" title="创建虚拟环境" class="md-nav__link">
+    创建虚拟环境
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="激活虚拟环境" class="md-nav__link">
+    激活虚拟环境
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="安装依赖包" class="md-nav__link">
+    安装依赖包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="更新依赖包" class="md-nav__link">
+    更新依赖包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="查看依赖包" class="md-nav__link">
+    查看依赖包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="卸载依赖包" class="md-nav__link">
+    卸载依赖包
   </a>
   
 </li>
@@ -860,30 +930,106 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/cosin2008/python.note/edit/master/docs/mkdocs/mkdocs-cn.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/cosin2008/python.note/edit/master/docs/devenv/pipenv.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="mkdocs">mkdocs中文支持<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
-<p>mkdocs搜索默认语言是英文，所有非英文字符在索引时都会被mkdocs忽略，界面上的提示文字也是英文。如果你的文档是用中文书写的，就需要把搜索语言和界面语言都切换为中文。</p>
-<h2 id="_1">设置搜索语言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>mkdocs搜索功能的官方支持语言列表里并没有中文。这是因为mkdocs搜索功能依赖于另一个开源模块lunr.js，lunr.js不支持中文而且暂时也没有支持中文的计划。按mkdocs官方文档上的技巧，在mkdocs.yml里将搜索语言设置为日文可得到一个令人初步满意的中文搜索效果。</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">search</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">language</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">jp</span> <span class="c1"># 将搜索语言设为日文，可同时获得中文搜索的基本支持</span>
+                <h1 id="pipenv">Pipenv<a class="headerlink" href="#pipenv" title="Permanent link">&para;</a></h1>
+<p>Python开发鼓励开发者使用包的概念来复用已经写好的公有模块。这些包一般是通过<a href="https://pypi.org/">Pypi</a>来管理的。但开发不同的Python应用，显然需要依赖不同功能、不同版本的包，甚至可能需要在不同版本的CPython下执行。为了更好的解耦和定义开发环境对包的依赖，Python开发社区创造了虚拟环境的概念。较流行的实现就是为特定的Python开发项目克隆一份特定版本的Python执行环境作为虚拟环境，然后在这个虚拟Python执行环境里安装所依赖的包，而不去污染全局的Python执行环境。然而这样的话，开发者常常需要管理多个不同的Python开发项目和对应的虚拟环境，于是又有其它一些五花八门的工具被开发出来帮助开发者自动选择与当前工程匹配的虚拟环境等。开发者还需要在使用pip安装依赖包后，设法维护requirements.txt文件来记录新的依赖包，比较繁琐也容易遗漏。</p>
+<p>Pipenv实际上就是一个一揽子解决方案。它是由著名的Requests库的作者开发维护的，而且受到了Python官方推荐。Pipenv把虚拟环境管理有关的若干工具封装起来，提供了程序员友好的使用界面。这样，以后开发程序时就不再需要掌握那么多五花八门的工具，而只需要安装和学会用Pipenv就够了。</p>
+<h2 id="pipenv_1">安装Pipenv<a class="headerlink" href="#pipenv_1" title="Permanent link">&para;</a></h2>
+<p>可考虑安装在全局Python环境里。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pip install pipenv
 </pre></div>
 </td></tr></table>
 
-<div class="admonition 注意">
-<p class="admonition-title">注意</p>
-<p>上面这种方式虽然在大多数场合或许已经够用了，但也许并非最佳的实现方式，因为缺少中文分词与词库的支持，而且性能上也有待进一步考察。</p>
-</div>
-<h2 id="_2">设置界面语言<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>此外，还应同时在mkdocs.yml里将界面主题语言设置为中文，这样将搜索界面上提示文字切换为中文。</p>
+<h2 id="_1">创建虚拟环境<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>进入工程目录的根目录，执行install命令（无参数），就可以自动为当前工程创建一个虚拟环境。</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">language</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">zh</span> <span class="c1"># 让搜索界面里的各种提示文字变成中文</span>
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">cd</span> myproject
+pipenv install
+</pre></div>
+</td></tr></table>
+
+<p>创建好虚拟环境后，pipenv会在项目根目录下建立pipfile和pipfile.lock文件。之后，你就可以运行下面的命令检查和定位项目仓库及虚拟环境的位置。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ pipenv --where
+返回项目repository的目录
+$ pipenv --venv
+返回虚拟环境所在目录
+$ pipenv --py
+返回Python解释器所在目录
+</pre></div>
+</td></tr></table>
+
+<h2 id="_2">激活虚拟环境<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>进入工程目录或其子目录，执行shell命令就可以自动查找并激活当前工程目录所关联的虚拟环境。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">cd</span> myproject
+pipenv shell
+python --version
+</pre></div>
+</td></tr></table>
+
+<h2 id="_3">安装依赖包<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>可以用install命令安装指定版本的包，也可以不指定版本以安装最新版本的包。比如：</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">cd</span> myproject
+pipenv install <span class="nv">requests</span><span class="o">==</span><span class="m">2</span>.13.0
+pipenv install requests
+</pre></div>
+</td></tr></table>
+
+<p>也可以增加--dev表示开发环境所需的依赖包，没有指定--dev时默认按同时被开发环境和运行环境所依赖处理。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> myproject
+$ pipenv install --dev pytest
+</pre></div>
+</td></tr></table>
+
+<h2 id="_4">更新依赖包<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>可以用update命令升级所有的依赖包，也可以指定包名称。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">cd</span> myproject
+pipenv update requests
+pipenv update
+</pre></div>
+</td></tr></table>
+
+<h2 id="_5">查看依赖包<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>可以用graph命令查看当前项目的包依赖的关系图。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ pipenv graph
+<span class="nv">requests</span><span class="o">==</span><span class="m">2</span>.18.4
+  - certifi <span class="o">[</span>required: &gt;<span class="o">=</span><span class="m">2017</span>.4.17, installed: <span class="m">2017</span>.7.27.1<span class="o">]</span>
+  - chardet <span class="o">[</span>required: &gt;<span class="o">=</span><span class="m">3</span>.0.2,&lt;<span class="m">3</span>.1.0, installed: <span class="m">3</span>.0.4<span class="o">]</span>
+  - idna <span class="o">[</span>required: &gt;<span class="o">=</span><span class="m">2</span>.5,&lt;<span class="m">2</span>.7, installed: <span class="m">2</span>.6<span class="o">]</span>
+  - urllib3 <span class="o">[</span>required: &lt;<span class="m">1</span>.23,&gt;<span class="o">=</span><span class="m">1</span>.21.1, installed: <span class="m">1</span>.22<span class="o">]</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="_6">卸载依赖包<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>可以用uninstall命令卸载依赖包。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">cd</span> myproject
+pipenv uninstall requests
+</pre></div>
+</td></tr></table>
+
+<p>可以用-all参数卸载所有的包，清空当前的虚拟环境。</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">cd</span> myproject
+pipenv uninstall --all
 </pre></div>
 </td></tr></table>
                 
@@ -906,7 +1052,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../themes/mkdocs-material/" title="materials" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../git/" title="Git" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -915,19 +1061,19 @@
                 <span class="md-footer-nav__direction">
                   后退
                 </span>
-                materials
+                Git
               </span>
             </div>
           </a>
         
         
-          <a href="../mkdocs-pages/" title="页面组织" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../setuptools/" title="setuptools" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   前进
                 </span>
-                页面组织
+                setuptools
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

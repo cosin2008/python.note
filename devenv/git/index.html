@@ -13,7 +13,7 @@
         <meta name="description" content="详细记录学习Python开发的心得">
       
       
-        <link rel="canonical" href="https://cosin2008.github.io/python.note/mkdocs/mkdocs-cn/">
+        <link rel="canonical" href="https://cosin2008.github.io/python.note/devenv/git/">
       
       
       
@@ -40,7 +40,7 @@
     
     
       
-        <title>中文支持 - Python学习笔记</title>
+        <title>Git - Python学习笔记</title>
       
     
     
@@ -102,7 +102,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#mkdocs" tabindex="1" class="md-skip">
+      <a href="#git" tabindex="1" class="md-skip">
         跳转至
       </a>
     
@@ -128,7 +128,7 @@
                 Python学习笔记
               </span>
               <span class="md-header-nav__topic">
-                中文支持
+                Git
               </span>
             
           
@@ -225,7 +225,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../devenv/cpython/" title="工具栈" class="md-tabs__link">
+        <a href="../cpython/" title="工具栈" class="md-tabs__link md-tabs__link--active">
           工具栈
         </a>
       
@@ -330,10 +330,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
     
     <label class="md-nav__link" for="nav-2-1">
       开发环境
@@ -351,7 +353,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../devenv/cpython/" title="CPython" class="md-nav__link">
+    <a href="../cpython/" title="CPython" class="md-nav__link">
       CPython
     </a>
   </li>
@@ -363,7 +365,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../devenv/vscode/" title="VSCode" class="md-nav__link">
+    <a href="../vscode/" title="VSCode" class="md-nav__link">
       VSCode
     </a>
   </li>
@@ -373,11 +375,124 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../devenv/git/" title="Git" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Git
+      </label>
+    
+    <a href="./" title="Git" class="md-nav__link md-nav__link--active">
       Git
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="基本概念和原理" class="md-nav__link">
+    基本概念和原理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="工作区、暂存区和分支" class="md-nav__link">
+    工作区、暂存区和分支
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="快照与修改历史" class="md-nav__link">
+    快照与修改历史
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_1" title="Git客户端和远程仓库" class="md-nav__link">
+    Git客户端和远程仓库
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_2" title="常用Git命令" class="md-nav__link">
+    常用Git命令
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="基础命令" class="md-nav__link">
+    基础命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="本地分支管理命令" class="md-nav__link">
+    本地分支管理命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="撤销与重演" class="md-nav__link">
+    撤销与重演
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="合并冲突" class="md-nav__link">
+    合并冲突
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="管理远程分支" class="md-nav__link">
+    管理远程分支
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -387,7 +502,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../devenv/pipenv/" title="pipenv" class="md-nav__link">
+    <a href="../pipenv/" title="pipenv" class="md-nav__link">
       pipenv
     </a>
   </li>
@@ -399,7 +514,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../devenv/setuptools/" title="setuptools" class="md-nav__link">
+    <a href="../setuptools/" title="setuptools" class="md-nav__link">
       setuptools
     </a>
   </li>
@@ -498,12 +613,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
     
     <label class="md-nav__link" for="nav-2-4">
       在线文档
@@ -521,7 +634,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mkdocs-basic/" title="入门" class="md-nav__link">
+    <a href="../../mkdocs/mkdocs-basic/" title="入门" class="md-nav__link">
       入门
     </a>
   </li>
@@ -533,7 +646,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mkdocs-github/" title="发布到Github" class="md-nav__link">
+    <a href="../../mkdocs/mkdocs-github/" title="发布到Github" class="md-nav__link">
       发布到Github
     </a>
   </li>
@@ -564,7 +677,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../themes/mkdocs-readthedocs/" title="readthedocs" class="md-nav__link">
+    <a href="../../mkdocs/themes/mkdocs-readthedocs/" title="readthedocs" class="md-nav__link">
       readthedocs
     </a>
   </li>
@@ -576,7 +689,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../themes/mkdocs-material/" title="materials" class="md-nav__link">
+    <a href="../../mkdocs/themes/mkdocs-material/" title="materials" class="md-nav__link">
       materials
     </a>
   </li>
@@ -591,56 +704,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        中文支持
-      </label>
-    
-    <a href="./" title="中文支持" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../mkdocs/mkdocs-cn/" title="中文支持" class="md-nav__link">
       中文支持
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目录</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" title="设置搜索语言" class="md-nav__link">
-    设置搜索语言
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="设置界面语言" class="md-nav__link">
-    设置界面语言
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -650,7 +718,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mkdocs-pages/" title="页面组织" class="md-nav__link">
+    <a href="../../mkdocs/mkdocs-pages/" title="页面组织" class="md-nav__link">
       页面组织
     </a>
   </li>
@@ -681,7 +749,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../syntax/mkdocs-md-editor/" title="编辑器" class="md-nav__link">
+    <a href="../../mkdocs/syntax/mkdocs-md-editor/" title="编辑器" class="md-nav__link">
       编辑器
     </a>
   </li>
@@ -693,7 +761,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../syntax/mkdocs-md-exts/" title="语法插件" class="md-nav__link">
+    <a href="../../mkdocs/syntax/mkdocs-md-exts/" title="语法插件" class="md-nav__link">
       语法插件
     </a>
   </li>
@@ -705,7 +773,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../syntax/mkdocs-md/" title="基本语法" class="md-nav__link">
+    <a href="../../mkdocs/syntax/mkdocs-md/" title="基本语法" class="md-nav__link">
       基本语法
     </a>
   </li>
@@ -717,7 +785,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../syntax/mkdocs-md-sci/" title="科技写作" class="md-nav__link">
+    <a href="../../mkdocs/syntax/mkdocs-md-sci/" title="科技写作" class="md-nav__link">
       科技写作
     </a>
   </li>
@@ -729,7 +797,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../syntax/mkdocs-md-code/" title="嵌入代码" class="md-nav__link">
+    <a href="../../mkdocs/syntax/mkdocs-md-code/" title="嵌入代码" class="md-nav__link">
       嵌入代码
     </a>
   </li>
@@ -831,16 +899,84 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="设置搜索语言" class="md-nav__link">
-    设置搜索语言
+  <a href="#_1" title="基本概念和原理" class="md-nav__link">
+    基本概念和原理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="工作区、暂存区和分支" class="md-nav__link">
+    工作区、暂存区和分支
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="快照与修改历史" class="md-nav__link">
+    快照与修改历史
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_1" title="Git客户端和远程仓库" class="md-nav__link">
+    Git客户端和远程仓库
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="设置界面语言" class="md-nav__link">
-    设置界面语言
+  <a href="#git_2" title="常用Git命令" class="md-nav__link">
+    常用Git命令
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="基础命令" class="md-nav__link">
+    基础命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="本地分支管理命令" class="md-nav__link">
+    本地分支管理命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="撤销与重演" class="md-nav__link">
+    撤销与重演
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="合并冲突" class="md-nav__link">
+    合并冲突
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="管理远程分支" class="md-nav__link">
+    管理远程分支
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -860,32 +996,234 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/cosin2008/python.note/edit/master/docs/mkdocs/mkdocs-cn.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/cosin2008/python.note/edit/master/docs/devenv/git.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="mkdocs">mkdocs中文支持<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
-<p>mkdocs搜索默认语言是英文，所有非英文字符在索引时都会被mkdocs忽略，界面上的提示文字也是英文。如果你的文档是用中文书写的，就需要把搜索语言和界面语言都切换为中文。</p>
-<h2 id="_1">设置搜索语言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>mkdocs搜索功能的官方支持语言列表里并没有中文。这是因为mkdocs搜索功能依赖于另一个开源模块lunr.js，lunr.js不支持中文而且暂时也没有支持中文的计划。按mkdocs官方文档上的技巧，在mkdocs.yml里将搜索语言设置为日文可得到一个令人初步满意的中文搜索效果。</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">search</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">language</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">jp</span> <span class="c1"># 将搜索语言设为日文，可同时获得中文搜索的基本支持</span>
-</pre></div>
-</td></tr></table>
-
-<div class="admonition 注意">
-<p class="admonition-title">注意</p>
-<p>上面这种方式虽然在大多数场合或许已经够用了，但也许并非最佳的实现方式，因为缺少中文分词与词库的支持，而且性能上也有待进一步考察。</p>
-</div>
-<h2 id="_2">设置界面语言<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>此外，还应同时在mkdocs.yml里将界面主题语言设置为中文，这样将搜索界面上提示文字切换为中文。</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">language</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">zh</span> <span class="c1"># 让搜索界面里的各种提示文字变成中文</span>
-</pre></div>
-</td></tr></table>
+                <h1 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
+<p><a href="https://git-scm.com/">Git</a>目前是最为流行的源码仓库，用于管理团队软件开发项目里的不同版本与分支的源代码。</p>
+<ul>
+<li>Git不需要在开发过过程中与远程仓库始终保持联网</li>
+<li>Git分支管理功能强大，创建分支的成本低、速度快</li>
+<li>Git目前已经可以跨平台使用</li>
+</ul>
+<blockquote>
+<p>很有意思的是，Git最初是Linus在两周时间里开发出来的，取代其它版本控制系统来管理Linux核心代码</p>
+</blockquote>
+<h2 id="_1">基本概念和原理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">工作区、暂存区和分支<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>每个git本地项目都被称为一个git仓库，仓库的结构如下：</p>
+<ul>
+<li>仓库（Repository）</li>
+<li>工作区（workspace）：所有的源码文件（可能会包括unstaged的修改）</li>
+<li>版本库（.git隐藏目录）：用来记录版本和分支信息的地方<ul>
+<li>暂存区 (Stage)：在执行git commit签入存档前，所有标记过的改动（如git add）都被暂时保存在暂存区</li>
+<li>主分支（Master）：仓库初始化（git init）和从远程仓库（git clone）克隆到本地时默认创建的主分支</li>
+<li>其它分支：以本地分支或远程分支为基础创建（git branch）一个新分支</li>
+<li>当前版本（HEAD）：一个指向当前分支（git checkout）的头指针</li>
+</ul>
+</li>
+</ul>
+<h3 id="_3">快照与修改历史<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>为快速切换版本和分支，Git实际上并不会比较和保存两个版本的文件内容差异，而是用快照来实现。每签入一个新版本，实际上就是一次对暂存区里有变化的文件制作一个快照。这样，切换分支或版本时，只需要切换为特定的快照就可以了。</p>
+<p>修改历史实际上就是由上面的快照组成的一颗树，每个节点都是一个版本快照。分支就成了若干首尾连接的版本快照组成的修改历史树上的一条路径。</p>
+<p>如果想学习和了解更多关于Git的原理，建议阅读<a href="https://marklodato.github.io/visual-git-guide/index-zh-cn.html">图解Git</a>。</p>
+<h2 id="git_1">Git客户端和远程仓库<a class="headerlink" href="#git_1" title="Permanent link">&para;</a></h2>
+<p>在<a href="https://git-scm.com/downloads">Git</a>网站上可以下载各个平台的Git客户端。</p>
+<p>如果需要多人合作、希望提供远程备份或者持续集成，那么你就需要考虑配合远程Git仓库使用。</p>
+<table>
+<thead>
+<tr>
+<th align="center">项目</th>
+<th align="center"><a href="https://github.com/">github</a></th>
+<th align="center"><a href="https://about.gitlab.com/">gitlab</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">开源</td>
+<td align="center">是</td>
+<td align="center">是</td>
+</tr>
+<tr>
+<td align="center">免费</td>
+<td align="center">是</td>
+<td align="center">是</td>
+</tr>
+<tr>
+<td align="center">私有项目</td>
+<td align="center">收费</td>
+<td align="center">免费</td>
+</tr>
+<tr>
+<td align="center">私有部署</td>
+<td align="center">不支持</td>
+<td align="center">免费</td>
+</tr>
+<tr>
+<td align="center">稳定性</td>
+<td align="center">较好</td>
+<td align="center">一般</td>
+</tr>
+</tbody>
+</table>
+<p>简单的，对于个人来说：</p>
+<ul>
+<li>如果是私有Git项目或者需要独立部署Git仓库，请选择Gitlab</li>
+<li>如果是开源项目，请选择Github。</li>
+</ul>
+<h2 id="git_2">常用Git命令<a class="headerlink" href="#git_2" title="Permanent link">&para;</a></h2>
+<h3 id="_4">基础命令<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">git init</td>
+<td align="center">把当前目录初始化为一个本地git仓库</td>
+</tr>
+<tr>
+<td align="center">git init {project-name}</td>
+<td align="center">在当前目录下创建一个项目子目录并初始化为一个本地git仓库</td>
+</tr>
+<tr>
+<td align="center">git add .</td>
+<td align="center">扫描当前目录（及子目录）下的所有修改，并记录到本地git仓库暂存区</td>
+</tr>
+<tr>
+<td align="center">git add {file-name}</td>
+<td align="center">向本地git仓库暂存区添加一个或多个文件</td>
+</tr>
+<tr>
+<td align="center">git add {path-name}</td>
+<td align="center">向本地git仓库暂存区添加一个目录（包括子目录和目录、子目录下的所有修改）</td>
+</tr>
+<tr>
+<td align="center">git rm {file-name}</td>
+<td align="center">在本地git仓库暂存区增加对一个或多个文件的删除</td>
+</tr>
+<tr>
+<td align="center">git mv {file-original} {file-renamed}</td>
+<td align="center">在本地git仓库暂存区增加对文件的重命名</td>
+</tr>
+<tr>
+<td align="center">git commit</td>
+<td align="center">将当前暂存区修改快照写入本地git版本库存档</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">本地分支管理命令<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">git branch {branch-name}</td>
+<td align="center">新建一个本地分支</td>
+</tr>
+<tr>
+<td align="center">git branch</td>
+<td align="center">查看本地所有分支</td>
+</tr>
+<tr>
+<td align="center">git checkout {branch-name}</td>
+<td align="center">切换当前分支</td>
+</tr>
+<tr>
+<td align="center">git branch -d {branch-name}</td>
+<td align="center">删除一个本地分支</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">撤销与重演<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">git revert {commit-id}</td>
+<td align="center">撤销特定的commit的修改（会新增一次Undo修改的commit）</td>
+</tr>
+<tr>
+<td align="center">git revert HEAD</td>
+<td align="center">撤销最后一次commit的修改（会新增一次Undo修改的commit）</td>
+</tr>
+<tr>
+<td align="center">git cherry-pick {commit-id}</td>
+<td align="center">反撤销已经被Undo的commit，相当于Redo</td>
+</tr>
+<tr>
+<td align="center">git cherry-pick {commit-id}</td>
+<td align="center">选择其它分支特定commit的修改，将其重演到当前分支上</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">合并冲突<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">git merge {branch-name}</td>
+<td align="center">将指定分支的所有修改合并到当前分支</td>
+</tr>
+</tbody>
+</table>
+<p>合并分支时有可能会出现冲突，发生冲突的时候需要手工修正冲突后commit。</p>
+<h3 id="_8">管理远程分支<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">git clone {remote-repo-url}</td>
+<td align="center">从远程仓库克隆一份到本地git仓库</td>
+</tr>
+<tr>
+<td align="center">git branch -r</td>
+<td align="center">查看远程仓库里的所有远程分支</td>
+</tr>
+<tr>
+<td align="center">git branch -d -r {branch-name}</td>
+<td align="center">删除一个远程分支</td>
+</tr>
+<tr>
+<td align="center">git checkout -b {branch-name} origin/{remote-branch-name}</td>
+<td align="center">克隆远程分支，创建并切换到对应的本地分支</td>
+</tr>
+<tr>
+<td align="center">git pull origin {remote-branch-name}</td>
+<td align="center">将远程分支的所有更新合并到当前本地分支（相当于git fetch加git merge）</td>
+</tr>
+<tr>
+<td align="center">git fetch origin {remote-branch-name}</td>
+<td align="center">取回远程分支的所有更新，但不合并到当前本地分支（方便本地查看）</td>
+</tr>
+<tr>
+<td align="center">git push origin {remote-branch-name}</td>
+<td align="center">把已签入的本地git仓库的修改版本推送到远端Git仓库（特定分支）</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
@@ -906,7 +1244,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../themes/mkdocs-material/" title="materials" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../vscode/" title="VSCode" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -915,19 +1253,19 @@
                 <span class="md-footer-nav__direction">
                   后退
                 </span>
-                materials
+                VSCode
               </span>
             </div>
           </a>
         
         
-          <a href="../mkdocs-pages/" title="页面组织" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../pipenv/" title="pipenv" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   前进
                 </span>
-                页面组织
+                pipenv
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

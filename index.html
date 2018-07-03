@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="详细记录学习Python全栈开发的心得">
+        <meta name="description" content="详细记录学习Python开发的心得">
       
       
         <link rel="canonical" href="https://cosin2008.github.io/python.note/">
@@ -40,7 +40,7 @@
     
     
       
-        <title>Python全栈学习笔记</title>
+        <title>Python学习笔记</title>
       
     
     
@@ -111,7 +111,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://cosin2008.github.io/python.note/" title="Python全栈学习笔记" class="md-header-nav__button md-logo">
+        <a href="https://cosin2008.github.io/python.note/" title="Python学习笔记" class="md-header-nav__button md-logo">
           
             <img src="./images/logo.svg" width="24" height="24">
           
@@ -125,7 +125,7 @@
           
             
               <span class="md-header-nav__topic">
-                Python全栈学习笔记
+                Python学习笔记
               </span>
               <span class="md-header-nav__topic">
                 前言
@@ -223,13 +223,26 @@
   
     <li class="md-tabs__item">
       
-        <a href="mkdocs/mkdocs-basic/" title="Python开发环境" class="md-tabs__link">
-          Python开发环境
+        <a href="devenv/cpython/" title="工具栈" class="md-tabs__link">
+          工具栈
         </a>
       
     </li>
   
 
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="data/jupyter/" title="数据工程" class="md-tabs__link">
+          数据工程
+        </a>
+      
+    </li>
   
 
       
@@ -251,7 +264,7 @@
         <img src="./images/logo.svg" width="48" height="48">
       
     </span>
-    Python全栈学习笔记
+    Python学习笔记
   </label>
   
     <div class="md-nav__source">
@@ -292,45 +305,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        前言
-      </label>
-    
     <a href="." title="前言" class="md-nav__link md-nav__link--active">
       前言
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目录</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#python_1" title="Python语言基础" class="md-nav__link">
-    Python语言基础
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python_2" title="Python开发环境" class="md-nav__link">
-    Python开发环境
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -345,11 +322,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
-      Python开发环境
+      工具栈
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
-        Python开发环境
+        工具栈
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -364,11 +341,179 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
     
     <label class="md-nav__link" for="nav-2-1">
-      mkdocs构建在线文档
+      开发环境
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-2-1">
-        mkdocs构建在线文档
+        开发环境
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="devenv/cpython/" title="CPython" class="md-nav__link">
+      CPython
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="devenv/vscode/" title="VSCode" class="md-nav__link">
+      VSCode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="devenv/git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="devenv/pipenv/" title="pipenv" class="md-nav__link">
+      pipenv
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="devenv/setuptools/" title="setuptools" class="md-nav__link">
+      setuptools
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      单元测试
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        单元测试
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="test/doctest/" title="doctest" class="md-nav__link">
+      doctest
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="test/pytest/" title="py.test" class="md-nav__link">
+      py.test
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      命令行工具
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        命令行工具
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="cli/fire/" title="fire" class="md-nav__link">
+      fire
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      在线文档
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        在线文档
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -391,8 +536,8 @@
 
 
   <li class="md-nav__item">
-    <a href="mkdocs/mkdocs-cn/" title="中文支持" class="md-nav__link">
-      中文支持
+    <a href="mkdocs/mkdocs-github/" title="发布到Github" class="md-nav__link">
+      发布到Github
     </a>
   </li>
 
@@ -404,13 +549,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-3" type="checkbox" id="nav-2-4-3">
     
-    <label class="md-nav__link" for="nav-2-1-3">
+    <label class="md-nav__link" for="nav-2-4-3">
       主题
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-1-3">
+      <label class="md-nav__title" for="nav-2-4-3">
         主题
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -450,15 +595,39 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="mkdocs/mkdocs-cn/" title="中文支持" class="md-nav__link">
+      中文支持
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="mkdocs/mkdocs-pages/" title="页面组织" class="md-nav__link">
+      页面组织
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-4" type="checkbox" id="nav-2-1-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-6" type="checkbox" id="nav-2-4-6">
     
-    <label class="md-nav__link" for="nav-2-1-4">
+    <label class="md-nav__link" for="nav-2-4-6">
       markdown文档编写
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-1-4">
+      <label class="md-nav__title" for="nav-2-4-6">
         markdown文档编写
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -539,6 +708,66 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      数据工程
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        数据工程
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="data/jupyter/" title="jupyter" class="md-nav__link">
+      jupyter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="data/pandas/" title="pandas" class="md-nav__link">
+      pandas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="data/dash/" title="dash" class="md-nav__link">
+      dash
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -556,29 +785,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">目录</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#python_1" title="Python语言基础" class="md-nav__link">
-    Python语言基础
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python_2" title="Python开发环境" class="md-nav__link">
-    Python开发环境
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -592,12 +798,23 @@
                   <a href="https://github.com/cosin2008/python.note/edit/master/docs/index.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="python">Python学习笔记<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
-<p>记录和分享自己学习Python开发的心得。</p>
-<h2 id="python_1">Python语言基础<a class="headerlink" href="#python_1" title="Permanent link">&para;</a></h2>
-<p>tbd</p>
-<h2 id="python_2">Python开发环境<a class="headerlink" href="#python_2" title="Permanent link">&para;</a></h2>
-<p>tbd</p>
+                <h1 id="python">人生苦短，我用Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
+<p>Python是目前开发效率最高的编程语言之一：</p>
+<ul>
+<li>代码简洁，开发速度快，大量的语法糖可减少繁琐的重复性代码</li>
+<li>生态系统强大，各领域都有大量有质量的开源免费的库可直接使用，无需重复造轮子</li>
+<li>跟其他编程语言的衔接较好，可以取长去短</li>
+<li>优秀的跨平台能力</li>
+</ul>
+<p>Python语言的应用非常广泛：</p>
+<ul>
+<li>运维工具：方便的编写各类自动化脚本，提高运维效率</li>
+<li>爬虫开发：抓取网站和数据处理等</li>
+<li>数据科学：包括人工智能在内数据科学的主流编程语言</li>
+<li>网络开发：互联网应用开发（网站、WebAPI等）</li>
+<li>儿童教育：儿童编程教育的入门语言</li>
+<li>其它：物联网和应用软件界面开发等</li>
+</ul>
                 
                   
                 
@@ -619,13 +836,13 @@
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="mkdocs/mkdocs-basic/" title="入门" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="devenv/cpython/" title="CPython" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   前进
                 </span>
-                入门
+                CPython
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

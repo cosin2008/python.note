@@ -13,7 +13,7 @@
         <meta name="description" content="详细记录学习Python开发的心得">
       
       
-        <link rel="canonical" href="https://cosin2008.github.io/python.note/mkdocs/mkdocs-cn/">
+        <link rel="canonical" href="https://cosin2008.github.io/python.note/mkdocs/mkdocs-pages/">
       
       
       
@@ -40,7 +40,7 @@
     
     
       
-        <title>中文支持 - Python学习笔记</title>
+        <title>页面组织 - Python学习笔记</title>
       
     
     
@@ -128,7 +128,7 @@
                 Python学习笔记
               </span>
               <span class="md-header-nav__topic">
-                中文支持
+                页面组织
               </span>
             
           
@@ -591,6 +591,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../mkdocs-cn/" title="中文支持" class="md-nav__link">
+      中文支持
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -601,58 +613,10 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        中文支持
-      </label>
-    
-    <a href="./" title="中文支持" class="md-nav__link md-nav__link--active">
-      中文支持
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目录</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" title="设置搜索语言" class="md-nav__link">
-    设置搜索语言
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="设置界面语言" class="md-nav__link">
-    设置界面语言
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../mkdocs-pages/" title="页面组织" class="md-nav__link">
+    <a href="./" title="页面组织" class="md-nav__link md-nav__link--active">
       页面组织
     </a>
+    
   </li>
 
         
@@ -827,29 +791,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">目录</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" title="设置搜索语言" class="md-nav__link">
-    设置搜索语言
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="设置界面语言" class="md-nav__link">
-    设置界面语言
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -860,30 +801,48 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/cosin2008/python.note/edit/master/docs/mkdocs/mkdocs-cn.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/cosin2008/python.note/edit/master/docs/mkdocs/mkdocs-pages.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="mkdocs">mkdocs中文支持<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
-<p>mkdocs搜索默认语言是英文，所有非英文字符在索引时都会被mkdocs忽略，界面上的提示文字也是英文。如果你的文档是用中文书写的，就需要把搜索语言和界面语言都切换为中文。</p>
-<h2 id="_1">设置搜索语言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>mkdocs搜索功能的官方支持语言列表里并没有中文。这是因为mkdocs搜索功能依赖于另一个开源模块lunr.js，lunr.js不支持中文而且暂时也没有支持中文的计划。按mkdocs官方文档上的技巧，在mkdocs.yml里将搜索语言设置为日文可得到一个令人初步满意的中文搜索效果。</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">search</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">language</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">jp</span> <span class="c1"># 将搜索语言设为日文，可同时获得中文搜索的基本支持</span>
-</pre></div>
-</td></tr></table>
-
-<div class="admonition 注意">
-<p class="admonition-title">注意</p>
-<p>上面这种方式虽然在大多数场合或许已经够用了，但也许并非最佳的实现方式，因为缺少中文分词与词库的支持，而且性能上也有待进一步考察。</p>
-</div>
-<h2 id="_2">设置界面语言<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>此外，还应同时在mkdocs.yml里将界面主题语言设置为中文，这样将搜索界面上提示文字切换为中文。</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">language</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">zh</span> <span class="c1"># 让搜索界面里的各种提示文字变成中文</span>
+                <h1 id="mkdocs">mkdocs的页面组织<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
+<p>默认情况下，mkdocs可以按子目录递归查找所有的markdown文件，并把它们按目录名和文件名组织起来。这种方式有几个不足：</p>
+<ul>
+<li>如果想控制文档的顺序，就需要在目录名和文件名头部插入章节序号来命名，而一旦出现序号增删变化，调整起来比较繁琐</li>
+<li>有时我们的md文件没有彻底写完，不想发布到外面也不想被索引到文档目录里</li>
+<li>有时我们会希望目录名、文件名和章节、标题并不一致，以便于自己组织</li>
+</ul>
+<p>在mkdocs.yml里增加pages配置就可以自定义章节目录的结构：</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">pages</span><span class="p p-Indicator">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">前言</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">开发环境</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">用mkdocs构建在线文档</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">入门</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs/mkdocs-basic.md</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">中文支持</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs/mkdocs-cn.md</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">主题</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">readthedocs</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs/themes/mkdocs-readthedocs.md</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs页面组织</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs/mkdocs-pages.md</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">发布到Github</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs/mkdocs-github.md</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">markdown文档编写</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">编辑器</span><span class="p p-Indicator">:</span>  <span class="l l-Scalar l-Scalar-Plain">mkdocs/syntax/mkdocs-md-editor.md</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">语法插件</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs/syntax/mkdocs-md-exts.md</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">基本语法</span><span class="p p-Indicator">:</span>  <span class="l l-Scalar l-Scalar-Plain">mkdocs/syntax/mkdocs-md.md</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">科技写作</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs/syntax/mkdocs-md-sci.md</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">嵌入代码</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs/syntax/mkdocs-md-code.md</span>
 </pre></div>
 </td></tr></table>
                 
@@ -906,7 +865,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../themes/mkdocs-material/" title="materials" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mkdocs-cn/" title="中文支持" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -915,19 +874,19 @@
                 <span class="md-footer-nav__direction">
                   后退
                 </span>
-                materials
+                中文支持
               </span>
             </div>
           </a>
         
         
-          <a href="../mkdocs-pages/" title="页面组织" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../syntax/mkdocs-md-editor/" title="编辑器" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   前进
                 </span>
-                页面组织
+                编辑器
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
