@@ -13,7 +13,7 @@
         <meta name="description" content="详细记录学习Python开发的心得">
       
       
-        <link rel="canonical" href="https://cosin2008.github.io/python.note/devenv/setuptools/">
+        <link rel="canonical" href="https://cosin2008.github.io/python.note/devenv/flit/">
       
       
       
@@ -40,7 +40,7 @@
     
     
       
-        <title>setuptools - Python学习笔记</title>
+        <title>flit - Python学习笔记</title>
       
     
     
@@ -102,7 +102,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#setuptools" tabindex="1" class="md-skip">
+      <a href="#flit" tabindex="1" class="md-skip">
         跳转至
       </a>
     
@@ -128,7 +128,7 @@
                 Python学习笔记
               </span>
               <span class="md-header-nav__topic">
-                setuptools
+                flit
               </span>
             
           
@@ -207,13 +207,29 @@
     <ul class="md-tabs__list">
       
         
-  <li class="md-tabs__item">
-    
-      <a href="../.." title="前言" class="md-tabs__link">
-        前言
-      </a>
-    
-  </li>
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="前言" class="md-tabs__link">
+          前言
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../py/f-string/" title="语法" class="md-tabs__link">
+          语法
+        </a>
+      
+    </li>
+  
 
       
         
@@ -298,10 +314,106 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../.." title="前言" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
       前言
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        前言
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="人生苦短，我用Python" class="md-nav__link">
+      人生苦短，我用Python
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../py/zen/" title="Python之禅" class="md-nav__link">
+      Python之禅
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../py/peps/" title="Python增强建议书" class="md-nav__link">
+      Python增强建议书
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../py/pep8/" title="Python代码风格" class="md-nav__link">
+      Python代码风格
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      语法
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        语法
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../py/f-string/" title="字符串格式化" class="md-nav__link">
+      字符串格式化
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -314,13 +426,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-2">
+    <label class="md-nav__link" for="nav-3">
       工具栈
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+      <label class="md-nav__title" for="nav-3">
         工具栈
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -335,13 +447,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
     
-    <label class="md-nav__link" for="nav-2-1">
+    <label class="md-nav__link" for="nav-3-1">
       开发环境
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-1">
+      <label class="md-nav__title" for="nav-3-1">
         开发环境
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -409,8 +521,8 @@
       
     
     
-    <a href="./" title="setuptools" class="md-nav__link md-nav__link--active">
-      setuptools
+    <a href="./" title="flit" class="md-nav__link md-nav__link--active">
+      flit
     </a>
     
   </li>
@@ -428,13 +540,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
     
-    <label class="md-nav__link" for="nav-2-2">
+    <label class="md-nav__link" for="nav-3-2">
       单元测试
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-2">
+      <label class="md-nav__title" for="nav-3-2">
         单元测试
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -476,13 +588,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
     
-    <label class="md-nav__link" for="nav-2-3">
+    <label class="md-nav__link" for="nav-3-3">
       命令行工具
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-3">
+      <label class="md-nav__title" for="nav-3-3">
         命令行工具
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -512,13 +624,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
     
-    <label class="md-nav__link" for="nav-2-4">
+    <label class="md-nav__link" for="nav-3-4">
       在线文档
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-4">
+      <label class="md-nav__title" for="nav-3-4">
         在线文档
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -555,13 +667,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-3" type="checkbox" id="nav-2-4-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4-3" type="checkbox" id="nav-3-4-3">
     
-    <label class="md-nav__link" for="nav-2-4-3">
+    <label class="md-nav__link" for="nav-3-4-3">
       主题
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-4-3">
+      <label class="md-nav__title" for="nav-3-4-3">
         主题
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -627,13 +739,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-6" type="checkbox" id="nav-2-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4-6" type="checkbox" id="nav-3-4-6">
     
-    <label class="md-nav__link" for="nav-2-4-6">
+    <label class="md-nav__link" for="nav-3-4-6">
       markdown文档编写
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-4-6">
+      <label class="md-nav__title" for="nav-3-4-6">
         markdown文档编写
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -721,13 +833,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-4">
       数据工程
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-4">
         数据工程
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -801,10 +913,26 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/cosin2008/python.note/edit/master/docs/devenv/setuptools.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/cosin2008/python.note/edit/master/docs/devenv/flit.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="setuptools">setuptools<a class="headerlink" href="#setuptools" title="Permanent link">&para;</a></h1>
+                <h1 id="flit">flit<a class="headerlink" href="#flit" title="Permanent link">&para;</a></h1>
+<p>(PyPI, Python Packaging Index)[<a href="https://pypi.org/]是世界上最大的Python包分发中心">https://pypi.org/]是世界上最大的Python包分发中心</a>。</p>
+<p>Python可通过已成为Python标准的distutils来支持包分发，但distutils并不能定义包依赖关系。所以传统方式下，大多数软件包的分发事实上是通过setup.py和setuptools、wheel等工具完成的：</p>
+<ul>
+<li>项目根目录的setup.py文件定义了软件分发所需的最重要的信息、依赖关系</li>
+<li>setup.py通过setuptools来检测依赖关系并安装所依赖的包</li>
+<li>setup.py可通过sdist命令来为当前工程生成源码包，也可通过bdist_wheel命令来生成二进制包</li>
+<li>生成的源码包或二进制包可通过twine上传到PyPi仓库上</li>
+</ul>
+<p>PEP 518定义了pyproject.toml文件，使得我们可以不必受限于setuptools来指定构建系统的最低系统要求。
+build-system]</p>
+<h1 id="minimum-requirements-for-the-build-system-to-execute">Minimum requirements for the build system to execute.<a class="headerlink" href="#minimum-requirements-for-the-build-system-to-execute" title="Permanent link">&para;</a></h1>
+<p>requires = [“setuptools”, “wheel”] # PEP 508 specifications.</p>
+<p>distutils 仅仅适用于包,它无法定义包之间的依赖关系。但是 setuptools 通过添加一个基本的依赖系统以及许多相关功能,弥补了该缺陷。他还提供了自动包查询程序,用来自动获取包之间的依赖关系,并完成这些包的安装,大大降低了安装各种包的难度,使之更加方便。</p>
+<p>是一个</p>
+<p>确定发布包是一个细致的工作。
+setuptools</p>
 <p><a href="https://setuptools.readthedocs.io/en/latest/">setuptools</a></p>
                 
                   

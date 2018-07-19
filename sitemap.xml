@@ -2,117 +2,137 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://cosin2008.github.io/python.note/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/py/zen/</loc>
+     <lastmod>2018-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/py/peps/</loc>
+     <lastmod>2018-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/py/pep8/</loc>
+     <lastmod>2018-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cosin2008.github.io/python.note/py/f-string/</loc>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/devenv/cpython/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/devenv/vscode/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/devenv/git/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/devenv/pipenv/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://cosin2008.github.io/python.note/devenv/setuptools/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <loc>https://cosin2008.github.io/python.note/devenv/flit/</loc>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/test/doctest/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/test/pytest/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/cli/fire/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/mkdocs/mkdocs-basic/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/mkdocs/mkdocs-github/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/mkdocs/themes/mkdocs-readthedocs/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/mkdocs/themes/mkdocs-material/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/mkdocs/mkdocs-cn/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/mkdocs/mkdocs-pages/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/mkdocs/syntax/mkdocs-md-editor/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/mkdocs/syntax/mkdocs-md-exts/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/mkdocs/syntax/mkdocs-md/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/mkdocs/syntax/mkdocs-md-sci/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/mkdocs/syntax/mkdocs-md-code/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/data/jupyter/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/data/pandas/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://cosin2008.github.io/python.note/data/dash/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
